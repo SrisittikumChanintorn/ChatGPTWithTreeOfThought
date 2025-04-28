@@ -54,42 +54,33 @@ The implementation consists of:
    - Developer can manually remove sub-branches with unsatisfactory responses
    - Final conclusion synthesizes all insights into a comprehensive analysis
 
-## 🚀 Installation & Usage
 
-### Prerequisites
-- Python 3.11.6
-- OpenAI API Key
-
-## Installation and Usage 🚀
-
-### Setup 🛠️ 
+## Setup 🛠️
 
 1. Clone this project to your repository:
 
-### Create Virtual Environment (optional but recommended)
-
+2. Create Virtual Environment (optional but recommended)
 ```bash
 python -m venv venv
 ```
 
-2. Activate Virtual Environment (venv) 📦 
+3. Activate Virtual Environment (venv) or Select Python Interpreture 📦 
    
 ```bash
 source venv/bin/activate  # On MacOS use this
 venv\Scripts\activate     # On Windows use this 
 ```
 
-3. Install dependencies ⬇️
+4. Install dependencies ⬇️
 ```bash
 pip install -r requirements.txt
 ```
 
-
-4. Configure API key 🔑
+5. Configure API key 🔑
    
-#### Edit `main.py` with your API key
+###### Edit `main.py` with your API key
 
-5. Run the analysis ▶️
+6. Run the analysis ▶️
 
 ```bash
 python main.py
