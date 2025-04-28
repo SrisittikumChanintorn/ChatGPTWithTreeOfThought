@@ -1,10 +1,10 @@
-# Claude with Tree of Thought (ToT) Implementation
+# ChatGPT with Tree of Thought (ToT) Implementation
 
-A Python implementation that leverages Claude's language capabilities combined with the Tree of Thought technique to solve complex analytical problems. This project demonstrates how GenAI can analyze multi-faceted questions by breaking them down into branches and sub-branches for comprehensive evaluation.
+A Python implementation that leverages ChatGPT's language capabilities combined with the Tree of Thought technique to solve complex analytical problems. This project demonstrates how GenAI can analyze multi-faceted questions by breaking them down into branches and sub-branches for comprehensive evaluation.
 
 ## 📋 Project Overview
 
-This program implements the Tree of Thought technique with Claude to solve complex problems requiring critical thinking and consideration of multiple factors. The current implementation analyzes the potential impact of a Chinese price war on Thailand's economy through multiple analytical branches.
+This program implements the Tree of Thought technique with ChatGPT to solve complex problems requiring critical thinking and consideration of multiple factors. The current implementation analyzes the potential impact of a Chinese price war on Thailand's economy through multiple analytical branches.
 
 ## 🧠 Understanding Tree of Thought
 
@@ -20,7 +20,6 @@ The Tree of Thought (ToT) methodology follows these key steps:
 
 ```bash
 .
-├── pycache/
 ├── main.py                  # Main execution script
 ├── requirements.txt         # Dependencies
 ├── tree_of_thought.py       # Core ToT implementation
@@ -32,9 +31,9 @@ The Tree of Thought (ToT) methodology follows these key steps:
 The implementation consists of:
 
 1. **Main Script** (`main.py`):
-   - Sets up API authentication with Anthropic
+   - Sets up API authentication with OpenAI
    - Defines the root question about Chinese price war impacts
-   - Configures model parameters (Claude-3-5-Sonnet-20240620, max tokens)
+   - Configures model parameters
    - Creates branch and sub-branch structure
    - Processes and assembles the final response
 
@@ -59,38 +58,49 @@ The implementation consists of:
 
 ### Prerequisites
 - Python 3.11.6
-- Anthropic API Key
+- OpenAI API Key
 
-### Setup
+## Installation and Usage 🚀
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Claude_with_TOT.git
-   cd Claude_with_TOT
-   ```
+### Setup 🛠️ 
+
+1. Clone this project to your repository:
+
+### Create Virtual Environment (optional but recommended)
+
+```bash
+python -m venv venv
+```
+
+2. Activate Virtual Environment (venv) 📦 
    
-2. Install dependencies in CMD:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.Configure your API key:
+```bash
+source venv/bin/activate  # On MacOS use this
+venv\Scripts\activate     # On Windows use this 
+```
 
-  Edit `main.py` and replace `"YOUR_API_KEY"` with your actual Anthropic API key
+3. Install dependencies ⬇️
+```bash
+pip install -r requirements.txt
+```
 
-### Running the Analysis
 
-Simply execute the main script:
+4. Configure API key 🔑
+   
+#### Edit `main.py` with your API key
 
-   ```bash
-   python main.py
-   ```
+5. Run the analysis ▶️
+
+```bash
+python main.py
+```
     
 ## 📊 How It Works
 
 The implementation uses a structured approach where:
 
-1. Each perspective function (like `domestic_market_competition`, `price_undercutting`, etc.) creates specific prompts for Claude
-2. Each function includes custom system content to guide Claude's analysis from that particular perspective
+1. Each perspective function (like `domestic_market_competition`, `price_undercutting`, etc.) creates specific prompts for ChatGPT
+2. Each function includes custom system content to guide ChatGPT's analysis from that particular perspective
 3. The main script assembles all branch outputs into a final query
 4. The `make_conclusion` function synthesizes all branches into a comprehensive analysis
 
@@ -100,7 +110,7 @@ The project is designed for easy adaptation to other complex analytical question
 
 1. Modify the root question in `main.py`
 2. Adjust branch functions in `tree_of_thought.py` to match your new question
-3. Configure branch-specific prompts to guide Claude's specialized analysis
+3. Configure branch-specific prompts to guide ChatGPT's specialized analysis
 4. Adjust the final query assembly to include all relevant perspectives
 
 ## 📝 Example Usage
