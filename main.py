@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 from tree_of_thought import *
 
-# Set the API key for AnthWhat is the potential impact of Chinese price war on Thailand economy?ropic 
+# Set the API key
 OPENAI_API_KEY = 'YOUR_API_KEY'  # Replace with your actual API key
 
 # Get the permission from the owner of the API key to use it.
